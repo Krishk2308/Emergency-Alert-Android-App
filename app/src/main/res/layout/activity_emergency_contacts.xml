@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmergencyContacts">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <ImageView
+                android:id="@+id/app_logo"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="78dp"
+                android:src="@drawable/safety_alarm" />
+
+            <TextView
+                android:id="@+id/contact1"
+                android:layout_width="377dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:hint="@string/emergency_contact_1"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edt_name1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:hint="Name"
+                android:paddingLeft="13dp"
+                android:background="@drawable/edt_background"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <EditText
+                android:id="@+id/edt_email1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/edt_name1"
+                android:layout_marginTop="10dp"
+                android:hint="Email"
+                android:paddingLeft="13dp"
+                android:background="@drawable/edt_background"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <EditText
+                android:id="@+id/edt_phone1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/edt_email1"
+                android:layout_marginTop="10dp"
+                android:hint="Mobile No."
+                android:paddingLeft="13dp"
+                android:background="@drawable/edt_background"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:id="@+id/contact2"
+                android:layout_width="377dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_email1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:hint="Emergency Contact 2"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edt_name2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/contact2"
+                android:layout_marginTop="10dp"
+                android:hint="Name"
+                android:paddingLeft="13dp"
+                android:background="@drawable/edt_background"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <EditText
+                android:id="@+id/edt_email2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/edt_name2"
+                android:layout_marginTop="10dp"
+                android:hint="Email"
+                android:paddingLeft="13dp"
+                android:background="@drawable/edt_background"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <EditText
+                android:id="@+id/edt_phone2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/edt_email2"
+                android:layout_marginTop="10dp"
+                android:hint="Mobile No."
+                android:paddingLeft="13dp"
+                android:background="@drawable/edt_background"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:id="@+id/contact3"
+                android:layout_width="377dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_phone2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:hint="Emergency Contact 3"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edt_name3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/contact3"
+                android:layout_marginTop="10dp"
+                android:hint="Name"
+                android:paddingLeft="13dp"
+                android:background="@drawable/edt_background"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <EditText
+                android:id="@+id/edt_email3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/edt_name3"
+                android:layout_marginTop="10dp"
+                android:hint="Email"
+                android:paddingLeft="13dp"
+                android:background="@drawable/edt_background"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <EditText
+                android:id="@+id/edt_phone3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/edt_email3"
+                android:layout_marginTop="10dp"
+                android:hint="Mobile No."
+                android:paddingLeft="13dp"
+                android:background="@drawable/edt_background"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_phone3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_background"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
